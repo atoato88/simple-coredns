@@ -1,0 +1,14 @@
+example.com {
+    file example.com
+    prometheus
+    errors
+    log
+}
+
+. {
+    proxy . 8.8.8.8
+    prometheus
+    errors
+    log
+    loadbalance round_robin
+}
